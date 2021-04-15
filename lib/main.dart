@@ -33,12 +33,12 @@ class widgetsBasicos extends StatelessWidget {
                         elevation: 30.0,
                         textColor: Colors.white,
                         child: Text("Clica em mim"),
-                        onPressed: exibirTexto,
+                        onPressed: ()=> exibirTexto('Pressinado'),
                               ),
                           );
                       }
-                       void exibirTexto() {
-                            print("Pressionado");
+                       void exibirTexto(String msg) {
+                            print(msg);
   }
 }
 
