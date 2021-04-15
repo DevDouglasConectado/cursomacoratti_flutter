@@ -26,16 +26,22 @@ class widgetsBasicos extends StatelessWidget {
                 )
             );
             }
-            widgetButton() {
-              return RaisedButton(
-                child: Text("Clique-me"),
-                onPressed: () {
-                  print("Pressionado");
-                },);
-            }
-
-  
+            widgetButton(){
+                    return Center(
+                      child: RaisedButton(
+                        color: Colors.orange,
+                        elevation: 30.0,
+                        textColor: Colors.white,
+                        child: Text("Clica em mim"),
+                        onPressed: exibirTexto,
+                              ),
+                          );
+                      }
+                       void exibirTexto() {
+                            print("Pressionado");
+  }
 }
+
 
 
 
