@@ -21,15 +21,18 @@ class widgetsBasicos extends StatelessWidget {
         title: Text("Widgets Básicos"),
         ),
       body: Container(
-        color: Colors.red,
+        color: Colors.white,
         child: widgetButton()
                 )
             );
-            
-          
-          }
-        
-          widgetButton() {}
+            }
+            widgetButton() {
+              return RaisedButton(
+                child: Text("Clique-me"),
+                onPressed: () {
+                  print("Pressionado");
+                },);
+            }
 
   
 }
