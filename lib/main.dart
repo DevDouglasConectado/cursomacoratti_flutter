@@ -1,3 +1,4 @@
+import 'package:cursomacoratti_flutter/widget_raisedbutton.dart';
 import 'package:flutter/material.dart';
 void main()=> runApp(MyApp()); 
   
@@ -21,13 +22,20 @@ class widgetsBasicos extends StatelessWidget {
         title: Text("Widgets Básicos"),
         ),
       body: Container(
-        color: Colors.white,
-        child: widgetRowColumn()
-                        )
-                    );
-                    }
+        width: double.infinity,
+        color: Colors.yellow,
+        child: widgetImage()
+                                )
+                            );
+                            }
         
-          widgetRowColumn() {}
+          widgetImage() {
+            return Center(
+              child: Image.asset("")
+              );
+          }
+        
+         
             
 }
 
